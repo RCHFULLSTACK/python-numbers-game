@@ -1,10 +1,9 @@
 import pygame
 
-# Set up screen
 screen_width = 600
 screen_height = 500
 FPS = 60
-# Define colors
+
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GREEN = (0, 128, 0)
