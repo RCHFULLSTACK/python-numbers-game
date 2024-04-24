@@ -16,13 +16,10 @@ class Button:
 
     def draw(self, screen):
         if not self.enabled:
-            # Draw disabled button with a different color
             disabled_color = (200, 200, 200)
             pygame.draw.rect(screen, disabled_color, self.rect, border_radius=self.radius)
         else:
-            # Draw the button with rounded edges
             pygame.draw.rect(screen, self.color, self.rect, border_radius=self.radius)
-        # Add text to the button
         if self.text != '':
             text_surface = self.font.render(self.text, True, self.text_color)
             text_rect = text_surface.get_rect(center=self.rect.center)
